@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.navigationBar {
+    display: flex;
+    background-color: pink;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.navigationChild {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    text-align: center;
+    grid-gap: 50px;
+}
+
+.websiteLogo a {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.navigationMenu {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+}
+
+.navigationMenu li a {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+}
+
+.navigationLinks {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.navigationLinks:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.navigationLinks:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.landingPage {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    margin: auto;
+    max-width: 300px;
+    padding-top: 125px;
+}
+.firstContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 25px 0px 25px;
+}
+.headerOne {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 35px;
+}
+.paragraphOne {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.button {
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: pink;
+    color: white;
+    transition: 0.2s ease-in-out;
+    border: 2px solid white;
+}
+
+.secondContent {
+    padding-top: 25px;
+    margin: auto;
+}
+
+.photonOne {
+    width: 200px 
+}
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 10px;
+    margin: auto;
+    max-width: 300px;
+    padding-top: 100px;
+}
+.thirdContent {
+    margin: auto;
+}
+.photoTwo {
+    width: 200px;
+}
+.headerTwo {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+.paragraphTwo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
+
+
+.aboutMe2 {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 10px;
+    margin: auto;
+    max-width: 300px;
+    padding-top: 100px;
+}
+.fifthContent {
+    margin: auto;
+}
+.photoThree {
+    width: 200px;
+}
+.headerThree {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 35px;
+}
+.paragraphThree {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.sectionOne {
+    display: flex;
+    margin: auto;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+}
+.headerFour {
+    background-color: pink;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    width: 100%;
+}
+
+.contactMe {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    margin: auto;
+}
+
+.sevenContent {
+    width: 100%;
+}
+.headerFive {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding: 25px;
+}
+.socmedLinks{
+    font-size: 50px;
+    text-align: center;
+    padding: 25px;
+}
+.fa-facebook{
+    color: #262626;
+}
+.fa-facebook:hover {
+    color: #0078d2;
+    transition: .5s;
+}
+.fa-instagram {
+    color: #262626;
+}
+.fa-instagram:hover {
+    background-image: linear-gradient(to right, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    transition: .5s;
+}
+
+.eightContent {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    margin: auto;
+}
+.headerSix {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 35px;
+    padding: 25px;
+}
+.email {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.phoneNumber {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.address {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.footer {
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: pink;
+    color: white;
+}
+.subFooter {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 25px;
+    margin: auto;
+}
+
+.myHobbies {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 35px;
+}
+.paragraphFour {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.myFavSnacks {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 35px;
+}
+.paragraphFive {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.mySport {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 35px;
+}
+.paragraphSix {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+    .navigationChild {
+        grid-gap: 600px;
+    }
+
+    .navigationMenu {
+        grid-gap: 50px;
+    }
+    .landingPage {
+        grid-template-columns: repeat(2, auto);
+        max-width: 900px;
+        padding-top: 150px;
+        grid-gap: 25px;
+    }
+    .headerOne {
+        font-size: 50px;
+    }
+    .paragraphOne {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    .button {
+        height: 50px;
+        width: 200px;
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    .photonOne {
+        width: 300px;
+    }
+    .aboutMe {
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 50px;
+        margin: auto;
+        max-width: 900px;
+        padding-top: 200px;
+    }
+    .photoTwo {
+        width: 300px;
+    }
+    .fourthContent {
+        margin-top: 50px;
+    }
+    .headerTwo {
+        font-size: 50px;
+    }
+    .paragraphTwo {
+        font-size: 25px;
+    }
+    
+    .aboutMe2 {
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 50px;
+        max-width: 900px;
+        padding-top: 200px;
+    }
+    .photoThree {
+        width: 350px;
+    }
+    .headerThree {
+        font-size: 50px;
+    }
+    .paragraphThree {
+        font-size: 20px;
+    }
+
+    .sectionOne {
+        margin: auto;
+        
+    }
+
+    .headerFour {
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        padding: 100px;
+    }
+
+    .headerFive {
+        font-size: 50px;
+    }
+
+    .eightContent {
+        max-width: 900px;
+    }
+    .headerSix {
+        font-size: 50px;
+        text-align: center;
+    }
+    .email {
+        font-size: 25px;
+    }
+    .phoneNumber {
+        font-size: 25px;
+    }
+    .address {
+        font-size: 25px;
+        padding-bottom: 250px;
+    }
+
+    .subFooter {
+        grid-template-columns: repeat(3, auto);
+        max-width: 900px;
+    }
+    .myHobbies {
+        font-size: 50px;
+    }
+    .paragraphFour {
+        font-size: 20px;
+    }
+    .myFavSnacks {
+        font-size: 50px;
+    }
+    .paragraphFive {
+        font-size: 20px;
+    }
+    .mySport {
+        font-size: 50px;
+    }
+    .paragraphSix {
+        font-size: 20px;
+    }
+
+    
+
+}
+
+
